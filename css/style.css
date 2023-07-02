@@ -1,0 +1,97 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family:'Kingsoft';
+  src:url('font/KingsoftCloudFont.ttf') format('truetype');
+}
+@font-face {
+  font-family:'Dingtalk';
+  src:url("font/DingTalkJinBuTi.ttf") format('truetype');
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg,#fff 0%,#d7e1ec 74%);
+}
+.services-section{
+  padding: 60px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color:#2f3542;
+  font-size: 40px;
+  font-family:"Dingtalk";
+}
+.border{
+  width: 160px;
+  height: 3px;
+  background:#fab1a0;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family:"Kingsoft";
+}
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #2f3542;
+  cursor: pointer;
+}
+.service-icon{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 3px solid #fab1a0;
+  color: #fab1a0;
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+  transform: rotate(45deg);
+}
+.service-icon i{
+  line-height: 80px;
+  font-size: 30px;
+  transform: rotate(-45deg);
+}
+.service-box:hover .service-icon{
+  background: #fab1a0;
+  color: #ebebeb;
+}
+.service-title{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+@media screen and (min-width: 769px) and (max-width: 960px){
+  .service-box{
+    max-width: 45%;
+  }
+}
+@media screen and (min-width: 479px) and (max-width: 768px){
+  .service-box{
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 480px){
+  .service-box{
+    max-width: 100%;
+  }
+}
