@@ -51,7 +51,7 @@ html,body{
   background: #FFC83C;
 }
 .wrapper .button:nth-child(5):hover .icon{
-  background: #f7cac9;
+  background: #fab10a;
 }
 .wrapper .button .icon i{
   font-size: 25px;
@@ -81,5 +81,5 @@ html,body{
   color: #FFC83C;
 }
 .wrapper .button:nth-child(5) span{
-  color: #f7cac9;
+  color: #fab10a;
 }
